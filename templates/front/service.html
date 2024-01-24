@@ -16,7 +16,7 @@
         <div class="col-md-4">
           <div class="box ">
             <div class="img-box">
-              <img src="{{ service.image.urls }}">
+              <img src="{{ service.image.url }}">
             </div>
             <div class="detail-box">
               <h6>
@@ -26,7 +26,7 @@
                 {{ service.body }}
               </p>
               <a href="">
-                Read More
+                Koproq...
               </a>
             </div>
           </div>
@@ -49,13 +49,13 @@
                 Guarder
               </span>
             </a>
-            <p>
-              Biz bilan xavfsiz hayot  
+            <p style="font-size: 20px;">
+              Biz bilan xavfsiz hayot. Tinch hayot qanchalar zavqli!   
             </p>
           </div>
         </div>
-        
-        <div class="col-md-3">
+        <div class="col-md-2"> </div>
+        <div class="col-md-3" style="width: 60px">
           <div class="info_info">
             <h5>
               Biz bilan bog'laning
@@ -76,34 +76,36 @@
             </a>
             <a href="" class="">
               <i class="fa fa-envelope" aria-hidden="true"></i>
-              <span>
+              <span style="margin-right: 100px;">
                 farhodbekjaloldinov@gmail.com
               </span>
             </a>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-2"> </div>
+        <div class="col-md-2">
           <div class="info_form ">
             <h5>
-              Newsletter
+              Obuna
             </h5>
             <form action="#">
-              <input type="email" placeholder="Elektron pochtangizni kiriting!">
+              {% csrf_token %}
+              <input type="email" name="email" placeholder="Elektron pochtangizni kiriting!">
               <button>
-                Subscribe
+                Obuna bo'lish
               </button>
             </form>
-            <div class="social_box">
-              <a href="">
+            <div class="social_box" >
+              <a href="#" style="margin-left: 15px">
                 <i class="fa fa-facebook" aria-hidden="true"></i>
               </a>
-              <a href="">
+              <a href="#" style="margin-left: 15px">
                 <i class="fa fa-twitter" aria-hidden="true"></i>
               </a>
-              <a href="">
-                <i class="fa fa-youtube" aria-hidden="true"></i>
+              <a href="https://t.me/Jaloldinov_Farkhodbek" style="margin-left: 15px">
+                <i class="fa fa-telegram" aria-hidden="true"></i>
               </a>
-              <a href="">
+              <a href="https://www.instagram.com/farhodbek_jaloldinov/?hl=en" style="margin-left: 15px">
                 <i class="fa fa-instagram" aria-hidden="true"></i>
               </a>
             </div>

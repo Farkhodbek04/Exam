@@ -8,15 +8,18 @@ class Services(models.Model):
 class Client(models.Model):
     image = models.ImageField(upload_to="clients image")
     name = models.CharField(max_length=35, default='Some default client name')
-    opinion = models.CharField(max_length=255,default='Some default opinion')
+    opinion = models.TextField(max_length=255,default='Some default opinion')
 
 class Contact(models.Model):
     full_name = models.CharField(max_length=50, default="Some full name")
     email = models.EmailField(max_length=50, default='email')
     phone = models.CharField(max_length=20, default='phone')
-    message = models.CharField(max_length=255, default='Message')
+    message = models.TextField(max_length=255, default='Message')
 
 class Guard(models.Model):
     image = models.ImageField(upload_to='Guards image')
     name = models.CharField(max_length=30, default="Guard name")
     status = models.CharField(max_length=20, default="Guard status")
+
+class obunalar(models.Model):
+    email_sub = models.EmailField(max_length=50)
