@@ -1,0 +1,120 @@
+{% extends 'front/base.html' %}
+{% load static %}
+{% block content %}
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 px-0">
+          <div class="img_container">
+            <div class="img-box">
+              <img src="{% static 'front/images/about-img.jpg' %}" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 px-0">
+          <div class="detail-box">
+            <div class="heading_container ">
+              <h2>
+                Biz kimmiz?
+              </h2>
+            </div>
+            <p>
+              Security Guards Services (SGS) Amerikaning eng tajribali va yuqori baholangan xavfsizlik kompaniyalaridan biridir. 1970-yilda tashkil etilgan bo'lib, u xodimlarni o'qitish va yaxshi boshqaruv, tafsilotlarga e'tibor va mijozlarga xizmat ko'rsatishga e'tibor qaratish orqali mukammalligi uchun obro' qozondi.
+
+SGS Keniya Xavfsizlik sanoati assotsiatsiyasining (KSIA) a'zosi bo'lib, uning siyosati va standartlariga to'liq mos ravishda ishlaydi. Bizning barcha qo'riqchilarimiz maktabda kamida 8-standartga erishgan va politsiyadan "yaxshi xulq-atvorni tasdiqlovchi" sertifikatlarga ega bo'lishi kerak, bu biz ishga qabul qilishdan oldin talab qilinadigan minimal standartlardir.
+
+Security Guards Services elektron kuzatuv, signal monitoringi va tezkor qo'riqchilarni joylashtirishni ta'minlaydigan qardosh kompaniya Ultimate Security bilan yaqin hamkorlik qiladi. Ushbu hamkorlik biz Keniyada tengsiz bo'lgan chuqur tajriba va bir qator xizmatlarni taklif qilishimiz mumkinligini anglatadi. Jinoyat va jinoiy faoliyatni qariyb 30 yil davomida kuzatib borgan holda, biz xavfsizlikning barcha jihatlari bo'yicha ekspert maslahatlarini bera olamiz.
+            </p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- info section -->
+  <section class="info_section ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="info_logo">
+            <a class="navbar-brand" href="{% url 'index' %}">
+              <span>
+                Guarder
+              </span>
+            </a>
+            <p>
+              Biz bilan xavfsiz hayot  
+            </p>
+          </div>
+        </div>
+        
+        <div class="col-md-3">
+          <div class="info_info">
+            <h5>
+              Biz bilan bog'laning
+            </h5>
+          </div>
+          <div class="info_contact">
+            <a href="" class="">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                Andijon
+              </span>
+            </a>
+            <a href="" class="">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                Tel : +998 902078177
+              </span>
+            </a>
+            <a href="" class="">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
+                farhodbekjaloldinov@gmail.com
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_form ">
+            <h5>
+              Newsletter
+            </h5>
+            <form action="#">
+              <input type="email" placeholder="Elektron pochtangizni kiriting!">
+              <button>
+                Subscribe
+              </button>
+            </form>
+            <div class="social_box">
+              <a href="">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-youtube" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info_section -->
+{% endblock %}
+
+
+
+

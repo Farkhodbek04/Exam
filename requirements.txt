@@ -1,0 +1,3 @@
+dajngo 5.0.0
+pillow
+environment

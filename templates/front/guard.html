@@ -1,0 +1,122 @@
+{% extends 'front/base.html' %}
+{% load static %}
+{% block content %}
+  <!-- team section -->
+
+  <section class="team_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Bizning Qo'riqchilar
+        </h2>
+        <p>
+          Bular bizning tajribali hodimlarimiz. Ular doimo xizmatingizga shay!
+        </p>
+      </div>
+      <div class="row">
+      {% for guard in guards %}
+        <div class="col-md-4 col-sm-6 mx-auto ">
+          <div class="box">
+            <div class="img-box">
+              <img src="{{ guard.image.url }}" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                {{ guard.name }}
+              </h5>
+              <h6 class="">
+                {{ guard.status }}
+              </h6>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+      </div>
+      <div class="btn-box">
+        <a href="{% url 'guard' %}">
+          Hammasini ko'rish
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- end team section -->
+
+  <!-- info section -->
+  <section class="info_section ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="info_logo">
+            <a class="navbar-brand" href="{% url 'index' %}">
+              <span>
+                Guarder
+              </span>
+            </a>
+            <p>
+              Biz bilan xavfsiz hayot  
+            </p>
+          </div>
+        </div>
+        
+        <div class="col-md-3">
+          <div class="info_info">
+            <h5>
+              Biz bilan bog'laning
+            </h5>
+          </div>
+          <div class="info_contact">
+            <a href="" class="">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                Andijon
+              </span>
+            </a>
+            <a href="" class="">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                Tel : +998 902078177
+              </span>
+            </a>
+            <a href="" class="">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
+                farhodbekjaloldinov@gmail.com
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_form ">
+            <h5>
+              Newsletter
+            </h5>
+            <form action="#">
+              <input type="email" placeholder="Elektron pochtangizni kiriting!">
+              <button>
+                Subscribe
+              </button>
+            </form>
+            <div class="social_box">
+              <a href="">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-youtube" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info_section -->
+
+{% endblock %}
